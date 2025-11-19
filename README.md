@@ -14,7 +14,7 @@
 ## Introduction
 We introduce EAR, a new "next-any-tokens prediction" paradigm for efficient and high-quality visual generation. EAR achieves state-of-the-art generation quality and efficiency trade-off for image generation tasks. All the training codes, data and models are open-sourced.
 
-All pretrained models can be downloaded from [HuggingFace](https://huggingface.co/FoodBamboo/EAR/tree/main).
+All pretrained models can be downloaded from [HuggingFace](https://huggingface.co/FoodBamboo/EAR/tree/main) (More weights will be coming soon!).
 
 ## 🔥 Update
 - [2025.11.19] training and sampling code are released !
