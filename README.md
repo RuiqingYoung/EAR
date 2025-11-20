@@ -3,9 +3,9 @@
 
 <div align="center">
 
-<!-- [![demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Online_Demo-blue)](https://huggingface.co/spaces/FoundationVision/LlamaGen)&nbsp;
-[![arXiv](https://img.shields.io/badge/arXiv%20paper-2406.06525-b31b1b.svg)](https://arxiv.org/abs/2406.06525)&nbsp;
-[![project page](https://img.shields.io/badge/Project_page-More_visualizations-green)](https://peizesun.github.io/llamagen/)&nbsp; -->
+<!-- [![demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Online_Demo-blue)](https://huggingface.co/spaces/FoundationVision/LlamaGen)&nbsp; -->
+[![arXiv](https://img.shields.io/badge/arXiv-2511.15499-b31b1b.svg)](https://arxiv.org/abs/2511.15499)
+<!-- [![project page](https://img.shields.io/badge/Project_page-More_visualizations-green)](https://peizesun.github.io/llamagen/)&nbsp; -->
 ![](img/model.png)
 
 </div>
@@ -25,10 +25,13 @@ See [Getting Started](GETTING_STARTED.md) for installation, training and evaluat
 
 ## BibTeX
 ```bibtex
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={}
+@misc{yang2025learningexpandimagesefficient,
+      title={Learning to Expand Images for Efficient Visual Autoregressive Modeling}, 
+      author={Ruiqing Yang and Kaixin Zhang and Zheng Zhang and Shan You and Tao Huang},
+      year={2025},
+      eprint={2511.15499},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.15499}, 
 }
 ```
