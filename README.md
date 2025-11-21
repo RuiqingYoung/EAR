@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<!-- [![demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Online_Demo-blue)](https://huggingface.co/spaces/FoundationVision/LlamaGen)&nbsp; -->
+[![weight](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Online_Demo-blue)](https://huggingface.co/FoodBamboo/EAR/tree/main)&nbsp;
 [![arXiv](https://img.shields.io/badge/arXiv-2511.15499-b31b1b.svg)](https://arxiv.org/abs/2511.15499)
 <!-- [![project page](https://img.shields.io/badge/Project_page-More_visualizations-green)](https://peizesun.github.io/llamagen/)&nbsp; -->
 ![](img/model.png)

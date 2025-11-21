@@ -76,10 +76,9 @@ def main(args):
     # Labels to condition the model with (feel free to change):
     #class_labels = [207, 360, 387, 974, 88, 979, 417, 279]
     #class_labels = [250, 250, 250, 250, 250, 250, 250, 250]
-    #class_labels = torch.randperm(1000)[:32].tolist()
+    class_labels = torch.randperm(1000)[:32].tolist()
     #class_labels = [0, 1, 2, 0, 1, 2, 0, 1]
     #class_labels = [0, 0, 0, 0, 0, 0, 0, 0]
-    class_labels = [22]*6
     c_indices = torch.tensor(class_labels, device=device)
     qzshape = [len(class_labels), args.codebook_embed_dim, latent_size, latent_size]
 
@@ -118,7 +117,7 @@ def main(args):
     print(f"decoder takes about {decoder_time:.2f} seconds.")
 
     # Save and display images:
-    save_image(samples, "sample_{}.png".format(args.gpt_type), nrow=3, normalize=True, value_range=(-1, 1))
+    save_image(samples, "sample_{}.png".format(args.gpt_type), nrow=4, normalize=True, value_range=(-1, 1))
     print(f"image is saved to sample_{args.gpt_type}.png")
 
 

@@ -9,6 +9,28 @@ Create a folder named `pretrained_models` and download the pre-trained weights i
 [XQGAN-8192.pt](https://huggingface.co/qiuk6/RobustTok/resolve/main/XQGAN-8192.pt?download=true)  
 *(from https://github.com/lxa9867/ImageFolder)*
 
+### Download AR models
+Method | params | training | tokens | FID (256x256) | weight 
+--- |:---:|:---:|:---:|:---:|:---:|
+EAR-adaLN-B   | 140M | DDP | 16x16 | 4.14 | [EAR-adaLN-B.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-B.pt)
+EAR-adaLN-L   | 477M | DDP | 16x16 | 2.76 | [EAR-adaLN-L.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-L.pt)
+EAR-adaLN-XL  | 1.1B | DDP | 16x16 | 2.54 | [EAR-adaLN-XL.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-XL.pt)
+
+### Sampling for Visualization
+Run single-GPU sampling to visualize generated images.
+
+```bash
+python autoregressive_31_adaLN/sample/sample_c2i.py \
+    --vq-ckpt ./pretrained_models/XQGAN-8192.pt \
+    --gpt-ckpt ./cloud_disk_31_adaLN/EAR-adaLN-XL.pt \
+    --gpt-model GPT-XL \
+    --image-size 256 \
+    --num-classes 1000 \
+    --cfg-scale 1.45 \
+    --top-k 100 \
+    # --top-p 0.95   # (optional) enable top-p sampling
+```
+
 ### Pre-extract Discrete Codes of Training Images
 Use the following command to extract discrete codes from training images.  
 `n` can be set according to the number of available GPUs:
