@@ -12,9 +12,9 @@ Create a folder named `pretrained_models` and download the pre-trained weights i
 ### Download AR models
 Method | params | training | tokens | FID (256x256) | weight 
 --- |:---:|:---:|:---:|:---:|:---:|
-EAR-adaLN-B   | 140M | DDP | 16x16 | 4.14 | [EAR-adaLN-B.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-B.pt)
-EAR-adaLN-L   | 477M | DDP | 16x16 | 2.76 | [EAR-adaLN-L.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-L.pt)
-EAR-adaLN-XL  | 1.1B | DDP | 16x16 | 2.54 | [EAR-adaLN-XL.pt](https://huggingface.co/FoodBamboo/EAR/blob/main/EAR-adaLN-XL.pt)
+EAR-adaLN-B   | 140M | DDP | 16x16 | 4.14 | [EAR-adaLN-B.pt](https://huggingface.co/FoodBamboo/EAR/resolve/main/EAR-adaLN-B.pt?download=true)
+EAR-adaLN-L   | 477M | DDP | 16x16 | 2.76 | [EAR-adaLN-L.pt](https://huggingface.co/FoodBamboo/EAR/resolve/main/EAR-adaLN-L.pt?download=true)
+EAR-adaLN-XL  | 1.1B | DDP | 16x16 | 2.54 | [EAR-adaLN-XL.pt](https://huggingface.co/FoodBamboo/EAR/resolve/main/EAR-adaLN-XL.pt?download=true)
 
 ### Sampling for Visualization
 Run single-GPU sampling to visualize generated images.
@@ -108,7 +108,7 @@ torchrun --nproc_per_node=n autoregressive_31_adaLN/sample/sample_c2i_ddp.py \
     --image-size 256 \
     --image-size-eval 256 \
     --num-classes 1000 \
-    --cfg-scale 1.65 \
+    --cfg-scale 1.65 \ # or 1.6
     --top-k 9000
 
 torchrun --nproc_per_node=n autoregressive_31_adaLN/sample/sample_c2i_ddp.py \
@@ -130,7 +130,7 @@ torchrun --nproc_per_node=n autoregressive_31_adaLN/sample/sample_c2i_ddp.py \
     --image-size 256 \
     --image-size-eval 256 \
     --num-classes 1000 \
-    --cfg-scale 1.475 \
+    --cfg-scale 1.475 \ # or 1.45
     --top-k 9000
 ```
 
